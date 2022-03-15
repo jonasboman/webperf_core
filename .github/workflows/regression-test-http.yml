@@ -23,6 +23,6 @@ jobs:
       if: ${{ success() }}
     - name: Test HTTP & Network
       run: |
-        python default.py -t 21 -r -u https://webperf.se/ -o .github/workflows/testresult-21.json
+        python default.py -t 21 -r -u https://mau.se/ -o .github/workflows/testresult-21.json
         python .github/workflows/verify_result.py -t 21
       if: ${{ success() }}

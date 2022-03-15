@@ -49,7 +49,7 @@ jobs:
     - name: Test Tracking and Privacy - USE DOCKER
       run: |
         python .github/workflows/verify_result.py -c true
-        python default.py -t 23 -r -u https://webperf.se/ -o .github/workflows/testresult-23.json
+        python default.py -t 23 -r -u https://mau.se/ -o .github/workflows/testresult-23.json
         python .github/workflows/verify_result.py -t 23
       if: ${{ success() }}
     - name: Setup Node.js (v1 version 14.x)
@@ -74,7 +74,7 @@ jobs:
     - name: Test Tracking and Privacy - USE NPM PACKAGE
       run: |
         python .github/workflows/verify_result.py -c false
-        python default.py -t 23 -r -u https://webperf.se/ -o .github/workflows/testresult-23.json
+        python default.py -t 23 -r -u https://mau.se/ -o .github/workflows/testresult-23.json
         python .github/workflows/verify_result.py -t 23
       if: ${{ success() }}
     - name: Test Directory - current

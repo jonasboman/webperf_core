@@ -23,6 +23,6 @@ jobs:
       if: ${{ success() }}
     - name: Test Standard files
       run: |
-        python default.py -t 9 -r -u https://webperf.se/ -o .github/workflows/testresult-09.json
+        python default.py -t 9 -r -u https://mau.se/ -o .github/workflows/testresult-09.json
         python .github/workflows/verify_result.py -t 9
       if: ${{ success() }}

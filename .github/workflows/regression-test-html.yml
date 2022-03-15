@@ -25,7 +25,7 @@ jobs:
       if: ${{ success() }}
     - name: Test HTML Validation (true)
       run: |
-         python default.py -t 6 -r -u https://webperf.se/ -o .github/workflows/testresult-06.json
+         python default.py -t 6 -r -u https://mau.se/ -o .github/workflows/testresult-06.json
          python .github/workflows/verify_result.py -t 6
       if: ${{ success() }}
     - name: Setup config (using SAMPLE-config.py as config.py)
@@ -33,6 +33,6 @@ jobs:
       if: ${{ success() }}
     - name: Test HTML Validation (false)
       run: |
-         python default.py -t 6 -r -u https://webperf.se/ -o .github/workflows/testresult-06.json
+         python default.py -t 6 -r -u https://mau.se/ -o .github/workflows/testresult-06.json
          python .github/workflows/verify_result.py -t 6
       if: ${{ success() }}
